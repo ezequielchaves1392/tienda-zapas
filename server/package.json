@@ -2,14 +2,14 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -17,11 +17,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  },
-  "scripts": {
-  ...
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-
+  }
 }
