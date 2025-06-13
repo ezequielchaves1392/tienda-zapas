@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tienda-zapas/static/css/main.ef7c1cfa.css",
+    "main.js": "/tienda-zapas/static/js/main.033a8fe8.js",
+    "static/js/453.419a5d54.chunk.js": "/tienda-zapas/static/js/453.419a5d54.chunk.js",
+    "index.html": "/tienda-zapas/index.html",
+    "main.ef7c1cfa.css.map": "/tienda-zapas/static/css/main.ef7c1cfa.css.map",
+    "main.033a8fe8.js.map": "/tienda-zapas/static/js/main.033a8fe8.js.map",
+    "453.419a5d54.chunk.js.map": "/tienda-zapas/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef7c1cfa.css",
+    "static/js/main.033a8fe8.js"
+  ]
+}
