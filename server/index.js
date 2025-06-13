@@ -1,29 +1,22 @@
-const express = require("express");
-const cors = require("cors");
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-const PORT = 3001;
-
-// Simulación de datos en memoria
-let usuarios = [
-  { id: 1, nombre: "Jugador1", progreso: { nivel: 1, experiencia: 0 } },
-];
-
+// Middlewares
 app.use(cors());
 app.use(express.json());
 
-// Obtener usuarios
-app.get("/api/usuarios", (req, res) => {
-  res.json(usuarios);
+// Rutas de ejemplo
+app.get("/", (req, res) => {
+  res.send("Servidor Express funcionando");
 });
 
-// Crear nuevo usuario
-app.post("/api/usuarios", (req, res) => {
-  const nuevo = { id: Date.now(), ...req.body };
-  usuarios.push(nuevo);
-  res.status(201).json(nuevo);
-});
-
+// Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`Servidor escuchando en http://localhost:${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
